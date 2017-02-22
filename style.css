@@ -1,6 +1,11 @@
-html {
+/*html {
   height: 100%;
   width: 100%;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,24 +15,59 @@ body {
 }
 
 .main-container {
-  width: 75%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.86);
-  padding: 5px;
+  /*padding: 5px;*/
   border-radius: 10px;
 }
 
 .main-container h1 {
+  margin: 0 0 20px 0;
   text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  color: #C9C9C9;
 }
 
 .text-box {
   margin: 0px auto;
   width: 40%;
+  border-radius: 10px;
 }
 
+.messages-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
 p{
   text-align: center;
-  margin: 3px 0;
-  font-size: 17px;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  border-width: thin;
+}
+p:nth-child(odd) {
+  background-color: #C9C9C9;
+  /*width: 60%;*/
+  /*float: left;
+  clear: both;*/
+}
+p:nth-child(even) {
+  background-color: white;
+  /*width: 60%;*/
+  /*float: right;
+  clear: both;*/
+}
+
+.picture {
+  background-image: url('aron-visser-212265.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+
 }
